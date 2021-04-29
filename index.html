@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+  </head>
+  <body>
+
+  <div class="titleTextSection" >
+    <div class="word">
+    <div class="differentFont">
+      <p>T</p>
+    </div>
+    <div class="titleText" id="appendHere">
+<p>he</p>
+    </div>
+    </div>
+
+<div class="word">
+    <div class="differentFont">
+    <p>D</p>
+    </div>
+    <div class="titleText">
+      igital
+    </div>
+    </div>
+
+    <div class="word">
+        <div class="differentFont">
+        <p>D</p>
+        </div>
+        <div class="titleText">
+          ystopia
+        </div>
+        </div>
+
+      <div class="word">
+        <div class="differentFont">
+        <p>D</p>
+        </div>
+        <div class="titleText">
+            atabase
+        </div>
+        </div>
+
+<div class="backgroundImages">
+  <img class = "animate__animated animate__zoomIn" src="Asset.jpg">
+</div>
+
+<div class="moreBackgroundImages">
+<img id="photo1" src="Asset.jpg">
+<img id="photo2" src="Asset.jpg">
+<img id="photo3" src="Asset.jpg">
+<img id="photo4" src="Asset.jpg">
+
+</div>
+
+
+
+  </div>
+
+  <div id="movieSection">
+
+
+    <div id="specificMovieSection">
+      <input id = "searchBar" class="search" placeholder="Search" />
+      <!-- <input placeholder="Search" autofocus class="animated-search-filter"> -->
+  <button class="sort" data-sort="Title Synopsis">
+    Sort
+  </button>
+
+  <button type="button" id = "preInternet" name="preInternet">Pre-Internet</button>
+  <button type="button" id = "resetButton" name="resetButton">Reset</button>
+
+    </div>
+    <ul class = "list" id = "movieListForSort">
+    <!-- <ul class="animated-search-filter"> -->
+
+    </ul>
+
+  </div>
+
+  <!-- <div class="card">
+    <div class="card-body">
+      <p>
+        #5 - Make element selectable/clickable
+      </p>
+
+      <p>
+        <a data-fancybox data-src="#selectableModal" href="javascript:;" class="btn btn-primary">Open demo</a>
+      </p>
+
+      <div style="display: none;max-width:500px;" id="selectableModal">
+        <h2 data-selectable="true">Ciao!</h2>
+        <p data-selectable="true">Sometimes you would want to disable "touch" feature. <br />For example, when you want to make your content selectable.</p>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div id="image-slider2" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="image01.png">
+        </li>
+        <li class="splide__slide">
+          <img src="image02.png">
+        </li>
+        <li class="splide__slide">
+          <img src="image03.png">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- list library -->
+  <script src="list.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script type = "module" src="script.js"></script>
+    <!-- <script src="animated-search-filter.js"></script> -->
+
+  </body>
+</html>

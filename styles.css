@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'V-GERB bold';
+  src: url('V-GERB(bold).ttf');
+}
+@font-face {
+  font-family: 'V-GERB light';
+  src: url('Veger(light).ttf');
+}
+@font-face {
+  font-family: 'V-GERB';
+  src: url('Voyager Grotesque(regular).ttf');
+}
+html body {
+  background-color:#160011;
+  padding:0;
+  margin:0;
+  color:#20F3D9;
+}
+
+
+.differentFont p {
+  margin:0;
+  padding:0;
+}
+.titleText p {
+  margin:0;
+  padding:0;
+}
+.word{
+  background: -webkit-linear-gradient(#eee, #20F3D9);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ /* text gradient from https://css-tricks.com/snippets/css/gradient-text/ */
+  border:2px solid blue;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-top: none;
+  /* line-height: 55px; */
+
+
+}
+
+
+
+
+.titleTextSection{
+  height:925px;
+  border:2px solid green;
+display: flex;
+flex-wrap:wrap;
+ font-size:90px;
+  align-content: center;
+  justify-content: center;
+}
+.titleText{
+  /* border: 2px solid white; */
+  display: inline-block;
+
+  font-family:'Saira Semi Condensed';
+  font-weight:500;
+}
+.differentFont{
+  display: inline-block;
+  font-size:105px;
+  font-family:'V-GERB bold';
+}
+
+#movieSection{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+#specificMovieSection{
+  border:2px solid white;
+  /* height:250px; */
+  width:100%;
+}
+
+.movieFocusStyle{
+  /* color:white; */
+  border:2px solid pink;
+  font-family:'Saira Semi Condensed';
+  font-weight:500;
+  text-align:center;
+  /* height:500px; */
+
+}
+
+
+.movieTitleSectionStyle{
+color:pink;
+border:2px solid red;
+font-size:85px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+.movieTitleTextStyle{
+  color:blue;
+  line-height: 95px;
+  border:2px solid yellow;
+  width:75%;
+}
+
+.movieSynopsisSectionStyle{
+  border: 2px solid red;
+  font-size: 12px;
+  font-weight:normal;
+  width:45%;
+  /* height:50px; */
+}
+
+.twoPartSectionStyle{
+
+  border:2px solid green;
+  /* height:45px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.moviePosterContainerStyle{
+  border: 2px solid teal;
+}
+
+.movieTextSectionStyle{
+  border: 2px solid orange;
+
+
+}
+
+/* #image-slider  {
+	width : 20px;
+	height: 200px;;
+} */
+
+.card{
+  /* display: none; */
+}
+
+.testColor{
+  background-color:pink;
+}
+
+
+
+.showMe{
+
+/* background-color:red; */
+}
+
+.windowContentStyles{
+  display: none;
+  max-width:500px;
+  background-color:red;
+
+
+}
+
+
+#windowContentStyles2{
+  background-color:red;
+
+
+}
+#CaptainAmericaCard{
+  background-color:blue;
+}
+
+#selectableModal{
+  background-color:red;
+
+}
+
+.fancybox-nav {
+
+display:none;
+
+}
+
+.backgroundImages{
+  position:absolute;
+  top:250px;
+  z-index: -2;
+  animation: rotation 140s infinite linear;
+
+}
+
+.moreBackgroundImages img{
+  position: absolute;
+  z-index: -1;
+  width:450px;
+  height:auto;
+  border:3px solid grey;
+
+}
+
+#photo1 {
+  bottom:75px;
+  right:65px;
+  transform: rotate(60deg);
+}
+#photo2 {
+  top:35px;
+  right:65px;
+
+  transform: rotate(60deg);
+}
+#photo3 {
+  right:65px;
+
+  top:35px;
+  transform: rotate(60deg);
+}
+#photo4 {
+  right:65px;
+
+  left:35px;
+  transform: rotate(60deg);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
