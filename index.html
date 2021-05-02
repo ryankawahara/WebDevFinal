@@ -3,29 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <link
      rel="stylesheet"
      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
    />
+
+   <link rel="stylesheet" href="animations.css" type="text/css">
+
   </head>
   <body>
 
-  <div class="titleTextSection" >
+<div class="cursor">
+
+</div>
+
+  <div class="titleTextSection" data-aos="fade-up">
     <div class="word">
     <div class="differentFont">
       <p>T</p>
     </div>
-    <div class="titleText" id="appendHere">
+    <div class="titleText" >
 <p>he</p>
     </div>
     </div>
 
-<div class="word">
+<div  class="word">
     <div class="differentFont">
     <p>D</p>
     </div>
@@ -53,14 +63,14 @@
         </div>
 
 <div class="backgroundImages">
-  <img class = "animate__animated animate__zoomIn" src="Asset.jpg">
+  <img class = "animate__animated animate__zoomIn" src="Asset.png">
 </div>
 
 <div class="moreBackgroundImages">
-<img id="photo1" src="Asset.jpg">
-<img id="photo2" src="Asset.jpg">
-<img id="photo3" src="Asset.jpg">
-<img id="photo4" src="Asset.jpg">
+<img id="photo1" src="Asset.png">
+<img id="photo2" src="Asset.png">
+<img id="photo3" src="Asset.png">
+<img id="photo4" src="Asset.png">
 
 </div>
 
@@ -68,21 +78,24 @@
 
   </div>
 
-  <div id="movieSection">
+  <div id="movieSection" >
 
 
-    <div id="specificMovieSection">
+    <div id="specificMovieSection"data-aos="fade-up">
       <input id = "searchBar" class="search" placeholder="Search" />
       <!-- <input placeholder="Search" autofocus class="animated-search-filter"> -->
-  <button class="sort" data-sort="Title Synopsis">
+  <button class="sort" data-sort="Title">
     Sort
   </button>
 
-  <button type="button" id = "preInternet" name="preInternet">Pre-Internet</button>
-  <button type="button" id = "resetButton" name="resetButton">Reset</button>
+  <button class="sort" data-sort="ReleaseYear">
+    Sort by Year
+  </button>
+  <button type="button" class ="filterButton" id = "preInternet" name="preInternet">Pre-Internet</button>
+  <button type="button" class ="filterButton"  id = "resetButton" name="resetButton">Reset</button>
 
     </div>
-    <ul class = "list" id = "movieListForSort">
+    <ul    class = "list " id = "movieListForSort" data-aos="fade-up">
     <!-- <ul class="animated-search-filter"> -->
 
     </ul>
@@ -107,28 +120,202 @@
   </div> -->
 
 
-  <div id="image-slider2" class="splide">
+  <div id="slideShow1984"  class="splide">
     <div class="splide__track">
       <ul class="splide__list">
         <li class="splide__slide">
-          <img src="image01.png">
+          <img src="1984.jpeg">
         </li>
         <li class="splide__slide">
-          <img src="image02.png">
+          <img src="1984Image2.jpeg">
         </li>
         <li class="splide__slide">
-          <img src="image03.png">
+          <img src="1984Image3.png">
+        </li>
+        <li class="splide__slide">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CmNnsfppk0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </li>
       </ul>
     </div>
   </div>
 
+  <div id="slideShowCaptainAmerica" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="CaptainAmerica1.jpg">
+        </li>
+        <li class="splide__slide">
+          <!-- <img src="image02.png"> -->
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tmfLYkcgJD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li class="splide__slide">
+          <img src="CaptainAmerica2.jpeg">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="slideShowStrangeDays"  class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="StrangeDays1.jpg">
+        </li>
+        <li class="splide__slide">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/fjKVXvBWGZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </li>
+        <li class="splide__slide">
+          <img src="StrangeDays2.png">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="slideShowEnemy" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="EnemyOfTheState1.jpg">
+        </li>
+        <li class="splide__slide">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZjogdKObxrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </li>
+        <li class="splide__slide">
+          <img src="EnemyImage2.png">
+        </li>
+        <li class="splide__slide">
+          <img src="EnemyImage3.png">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="slideShowNerve"  class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="NervePoster1.jpg">
+        </li>
+        <li class="splide__slide">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ce5cnb_5dVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </li>
+        <li class="splide__slide">
+          <img src="NerveImage1.png">
+        </li>
+        <li class="splide__slide">
+          <img id src="NerveImage2.png">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="slideShowTrumanShow"  class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="TrumanShow1.jpg">
+        </li>
+        <li class="splide__slide">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/YfJc2bORFHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </li>
+        <li class="splide__slide">
+          <img src="TrumanShow2.jpeg">
+        </li>
+        <li class="splide__slide">
+          <img src="TrumanShow3.png">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<div id="card1984">
+  <h1>YUPP</h1>
+
+booga
+
+<div id="slideShowFacialRecognition" class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="TrumanShow1.jpg">
+      </li>
+
+      <li class="splide__slide">
+        <img src="TrumanShow2.jpeg">
+      </li>
+      <li class="splide__slide">
+        <img src="TrumanShow3.png">
+      </li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+<div id="CaptainAmericaCard">
+ooga
+</div>
+
+<div id="StrangeDaysCard">
+ooga
+</div>
+
+<div id="beforeClickContentStrangeDaysCard">
+Booga
+</div>
+
+<div id="TrumanShowCard">
+ooga
+</div>
+
+<div id="beforeClickContentTrumanShowCard">
+Booga
+</div>
+
+<div id="EnemyCard">
+ooga
+</div>
+
+<div id="beforeClickContentEnemyCard">
+Booga
+</div>
+
+<div id="NerveCard">
+ooga
+</div>
+
+<div id="beforeClickContentNerveCard">
+Booga
+</div>
+
+<div id="beforeClickContent1984">
+Monitoring
+</div>
+
+<div id="beforeClickContentCaptainAmerica">
+there
+</div>
+
+
+<!--
+<div class="animatedParent">
+  <div class="animated fadeIn box">
+  ryanStyle
+</div>
+
+</div> -->
 <!-- list library -->
   <script src="list.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script type = "module" src="script.js"></script>
     <!-- <script src="animated-search-filter.js"></script> -->
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="css3-animate-it.js"></script>
   </body>
 </html>
