@@ -143,26 +143,39 @@ flex-wrap:wrap;
   /* width:100%; */
 }
 
+#movieListForSort{
+  /* border:2px solid green; */
+  width:60%;
+
+}
+
+
+.animatedParent{
+  margin-top:25px;
+  /* border:2px solid purple; */
+  width:100%;
+}
 .movieFocusStyle{
   /* color:white; */
-  border:2px solid blue;
-  width: 97%;
+  /* border:10px solid blue; */
+  /* width: 100%; */
   font-family:'Saira Semi Condensed';
   font-weight:500;
   text-align:center;
   /* height:500px; */
+  /* border-radius:600px; */
 
 }
 
 .listStyle{
   list-style-type: none;
-
+margin-left:-40px;;
 }
 
 
 .movieTitleSectionStyle{
 color:pink;
-border:2px solid red;
+/* border:2px solid red; */
 font-size:85px;
 display: flex;
 flex-direction: column;
@@ -172,9 +185,10 @@ align-items: center;
 }
 
 .movieTitleTextStyle{
-  color:blue;
+font-weight:700;
   line-height: 95px;
-  border:2px solid yellow;
+  color:white;
+  /* border:2px solid yellow; */
   width:75%;
 }
 
@@ -182,15 +196,18 @@ align-items: center;
   text-align: left;
   color:white;
   /* border: 2px solid red; */
-  font-size: 12px;
+  font-size: 18px;
   font-weight:normal;
-  width:45%;
+  width:55%;
+  padding-bottom:50px;
+  margin-bottom:10px;
+  border-bottom:5px solid white;
   /* height:50px; */
 }
 
 .twoPartSectionStyle{
 
-  border:2px solid green;
+  /* border:2px solid green; */
   /* height:45px; */
   display: grid;
   grid-template-columns: 0.35fr 1fr;
@@ -198,17 +215,49 @@ align-items: center;
   grid-row-gap: 5px;
 }
 
+.slideShowAndText{
+
+  /* border:2px solid green; */
+  /* height:45px; */
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  width:100%;
+
+
+  border:2px solid pink;
+}
+
+.cardSlideShow{
+  /* width:75%; */
+  border:2px solid purple;
+  /* width:60%; */
+  /* height:50px; */
+  /* width:100%; */
+
+
+}
+.cardText{
+  width:65%;
+
+  border:2px solid yellow;
+    /* height:50px; */
+    /* width:100%; */
+
+}
+
 .moviePosterContainerStyle{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
   width:100%;
+  justify-content: center;
   /* padding-right:-190px; */
 }
 
 .movieTextSectionStyle{
-  border: 2px solid orange;
+  /* border-top: 2px  solid white; */
 
 
 }
@@ -248,10 +297,18 @@ align-items: center;
 
 }
 
+
+.cardStyle{
+  width:75%;
+  height:800px;
+  font-family:'Saira Semi Condensed';
+  font-weight:500;
+}
+
 #card1984{
   background-color:teal;
-  width:1500px;
-  height:1500px;
+
+
 }
 #CaptainAmericaCard{
   background-color:blue;
@@ -334,6 +391,9 @@ color:white;
 
 /* sort styles from https://listjs.com/examples/data-attributes-custom-attributes/ */
 .sort {
+  font-family:'Saira Semi Condensed';
+  line-height: 10px;
+
   padding:8px 30px;
   border-radius: 6px;
   border:none;
@@ -354,6 +414,8 @@ color:white;
 }
 
 .filterButton{
+  font-family:'Saira Semi Condensed';
+  line-height: 10px;
   padding:8px 30px;
   border-radius: 6px;
   border:none;
@@ -364,9 +426,16 @@ color:white;
   height:30px;
 }
 
+
+.filterButton:hover{
+  background-color:#1b8aba;
+
+}
 .filterButton:focus{
   background-color:yellow;
 }
+
+
 .sort:after {
 
   width: 0;
@@ -402,3 +471,153 @@ color:white;
   top:-10px;
   right:-5px;
 }
+
+.beforeClickContentDiv{
+
+  color:white;
+  font-size:24px;
+  text-align:left;
+}
+
+.beforeClickContentDiv h1{
+  text-align:center;
+  color:white;
+
+}
+.beforeClickContentDiv p{
+margin-left:25px;
+margin-right:25px;
+text-align:left;
+}
+
+a{
+  padding:8px 20px;
+  font-size:25px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #28a8e0;
+  height:50px;
+  transition:0.5s;
+}
+
+a:hover{
+
+
+  background-color:#1B1464;
+
+}
+
+#searchBar{
+  font-family:'Saira Semi Condensed';
+  color:white;
+  height:24px;
+  border-radius: 6px;
+
+
+  background-color:#11000F;
+  border:2px solid white;
+}
+
+/* adapted from https://css-tricks.com/gradient-borders-in-css/ */
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 10px;
+  /* border-radius: 100px; */
+
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to top, #20F3D9, white);
+}
+
+.cardContent{
+  color:white;
+  /* border: 10px solid blue; */
+  /* height:200%; */
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.cardContent p{
+
+  font-size:22px;
+}
+
+
+
+#NerveCard{
+  background-color:#5758BB;
+}
+
+.cardContent h1{
+  margin-top:0px;
+  font-size:60px;
+  margin-bottom:0px;
+
+}
+
+.cardContent h2{
+  margin-top:0px;
+
+  font-weight:500;
+}
+
+.quoteDivSection{
+  border:3px solid yellow;
+  /* width:100%; */
+  height:925px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quoteDiv{
+  height:50%;
+  display: inline-block;
+  border:2px solid red;
+  width:60%;
+  /* height:500px; */
+  font-family:'Saira Semi Condensed';
+}
+
+.quoteIcon{
+  font-size:290px;
+  padding-top:150px;
+  line-height: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+
+  /* border: 2px solid yellow; */
+}
+
+.quoteText{
+  font-size:60px;
+  line-height: 65px;
+
+  display: inline-block;
+
+  /* border:2px solid pink; */
+}
+
+.attributionText{
+  font-size:50px;
+}
+
+.scrollDownSection{
+  border:2px solid teal;
+  height:50px;
+  width:50px;
+  }
+
+  #slideShowFacialRecognition img{
+
+  }
+
+  .splide__slide.is-active.is-visible{
+    width:300px;
+    height:300px;
+  }

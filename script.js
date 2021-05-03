@@ -119,6 +119,19 @@ console.log("loaded");
       "heightRatio":1.5,
     } ).mount();
 
+
+    new Splide( "#slideShowNewNew", {
+      'cover'      : true,
+      "width":"45vw",
+      "heightRatio":0.5,
+    } ).mount();
+
+    new Splide( "#PatriotActSlideshow", {
+      'cover'      : true,
+      "width":"45vw",
+      "heightRatio":0.5,
+    } ).mount();
+
   }
   // movieBox.innerText="";
 
@@ -295,6 +308,8 @@ movieList.classList.add("listStyle");
 
   let movieFocus = document.createElement("DIV");
     movieFocus.classList.add('movieFocusStyle');
+    movieFocus.classList.add('border-gradient');
+    movieFocus.classList.add('border-gradient-purple');
     // movieFocus.classList.add('animated');
     // movieFocus.classList.add('rollIn');
     // movieFocus.classList.add('box');
@@ -385,7 +400,7 @@ movieList.classList.add("listStyle");
     linkToWhere.setAttribute("data-src", "#"+showThisJSON["FocusCardName"]);
     // switch this to a json thing
     linkToWhere.setAttribute("href", "javascript:;");
-linkToWhere.innerText= "click";
+linkToWhere.innerText= "Compare to Reality";
 
 // let displayWindowContents = document.createElement("DIV");
  let displayWindowContents = document.getElementById(showThisJSON["FocusCardName"]);
@@ -400,7 +415,7 @@ displayWindowContents.setAttribute("data-selectable","true");
 
 let windowHeaderText = document.createElement("H2");
 windowHeaderText.setAttribute("data-selectable","true");
-windowHeaderText.innerText=(showThisJSON["Title"]);
+// windowHeaderText.innerText=(showThisJSON["Title"]);
 
 displayWindowContents.appendChild(windowHeaderText);
 
