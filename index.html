@@ -67,16 +67,29 @@
 </div>
 
 <div class="moreBackgroundImages">
-<img id="photo1" src="Asset.png">
+
+<img id="photo1" src="Asset Flipped.png">
 <img id="photo2" src="Asset.png">
 <img id="photo3" src="Asset.png">
 <img id="photo4" src="Asset.png">
+<img id="photo5" src="Asset.png">
+<img id="photo6" src="Asset.png">
+
+
 
 </div>
 
 
 
+
+
   </div>
+  <div class="indicators">
+    <img id="sticky" src="Asset.png">
+    <img id="sticky2" src="Asset Flipped.png">
+  </div>
+
+
 
   <div data-aos="fade-up" class="quoteDivSection">
 <div class="quoteDiv">
@@ -85,7 +98,7 @@
     <div class="quoteIcon">
       “
     </div>
-Machines are already undertaking tasks which were unthinkable — if not unimaginable - a decade ago
+Machines are already undertaking tasks which were unthinkable — if not unimaginable - a decade ago.
   </div>
   <div class="attributionText">
 <strong>Andy Haldane</strong>
@@ -95,7 +108,18 @@ Chief Economist, Bank of England
 </div>
 
 <div class="scrollDownSection">
-Ryan
+<p class="frontText">Scroll to compare the imagination of past films with modern digital life.</p>
+
+<div class="arrowContainer animate__animated animate__pulse animate__infinite	infinite">
+
+<img class = "coverUp" src="BackgroundColor.png">
+<!-- arrow from https://www.w3schools.com/howto/howto_css_arrows.asp -->
+
+<a href="#topOfPage">
+<p><i class="arrow down border-gradient border-gradient-purple"></i></p>
+</a>
+</div>
+
 </div>
   </div>
 
@@ -103,18 +127,29 @@ Ryan
 
 
     <div id="specificMovieSection">
-      <input id = "searchBar" class="search" placeholder="Search" />
+      <a name="topOfPage"></a>
+      <br>
+      <br>
+<div class="searchBarSection">
+  <img class = "icon" src="SearchIcon.png">
+  <input id = "searchBar" class="search" placeholder="Ex: Virtual Reality, Streaming" />
+
+</div>
       <!-- <input placeholder="Search" autofocus class="animated-search-filter"> -->
-  <button class="sort" data-sort="Title">
-    Sort
+
+<div class="listOfButtons">
+
+
+  <button id= "sortByNameButton" class="sort" data-sort="Title">
+    Sort By Name
   </button>
 
-  <button class="sort" data-sort="ReleaseYear">
+  <button id= "sortByYearButton" class="sort" data-sort="ReleaseYear">
     Sort by Year
   </button>
   <button type="button" class ="filterButton" id = "preInternet" name="preInternet">Pre-Internet</button>
   <button type="button" class ="filterButton"  id = "resetButton" name="resetButton">Reset</button>
-
+</div>
     </div>
     <ul    class = "list " id = "movieListForSort" data-aos="fade-up">
     <!-- <ul class="animated-search-filter"> -->
@@ -256,34 +291,50 @@ Ryan
     </div>
   </div>
 
-<div class = "cardStyle" id="card1984">
-  <h1>YUPP</h1>
+  <div class = "cardStyle animate__animated animate__zoomIn" id="card1984">
+    <div data-selectable = true class="cardContent">
+      <h1  >Facial Recognition</h1>
+      <h2 >Your Faceprint is Everywhere</h2>
 
-booga
+    <div class="slideShowAndText">
+      <div class="cardSlideShow">
 
-<div id="slideShowFacialRecognition" class="splide">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide">
-        <img src="TrumanShow1.jpg">
-      </li>
+        <div id="slideShowFacialRecognition"  class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="FacialRecognition.png">
+              </li>
+              <li class=" splide__slide">
+                <img src="FacialRecognition2.jpeg">
+              </li>
+              <li class=" splide__slide">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pGJNXG2vmZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div data-selectable = true class="cardText">
 
-      <li class="splide__slide">
-        <img src="TrumanShow2.jpeg">
-      </li>
-      <li class="splide__slide">
-        <img src="TrumanShow3.png">
-      </li>
-    </ul>
+<p>The facial recognition software that Orwell predicted in 1984 has been fully realized today. One of the leading companies using facial recognition is Clearview AI. The New York Times describes Clearview by saying, “Clearview is ... using billions of photos from the public internet. By testing legal and ethical limits around the collection and use of those images, it has become the front-runner in the field.”</p>
+<p>Although the United States does not have any laws prohibiting facial recognition at a national level, some states like Illinois require companies to obtain consent from customers to use their “faceprint.”
+</p>
+
+      </div>
+      <a target="_blank" href="https://www.nytimes.com/interactive/2021/03/18/magazine/facial-recognition-clearview-ai.html">Learn More</a>
+
+
+    </div>
+    </div>
+
+
   </div>
 
-</div>
-</div>
-
-<div class = "cardStyle" id="CaptainAmericaCard">
+<div class = "cardStyle animate__animated animate__zoomIn" id="CaptainAmericaCard">
   <div data-selectable = true class="cardContent">
-    <h1  class>NewNew</h1>
-    <h2 >The Control My Life App</h2>
+    <h1  class>The PATRIOT Act</h1>
+    <h2 >With Security Comes Surveillance</h2>
 
   <div class="slideShowAndText">
     <div class="cardSlideShow">
@@ -292,23 +343,25 @@ booga
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
-              <img src="NewNewImage1.jpeg">
+              <img src="PatriotAct.jpg">
             </li>
             <li class=" splide__slide">
-              <img src="NewNewImage2.png">
+              <img src="PatriotAct2.jpeg">
             </li>
             <li class=" splide__slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/emCXc5kZlIk?start=41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KP9VklrXPZs?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <div data-selectable = true class="cardText">
-  <p>NewNew is an app created in 2021 that allows users to vote and influence their favorite creators' behaviors. The app bears striking resemblence to <i>Nerve</i> because of how it monetizes the lives of creators.</p>
+  <p>A real-life government program that increased surveillance in the name of National Security was the PATRIOT Act. Following the attacks of September 11, Congress signed the PATRIOT act into law to prevent future terrorist attacks. To do so, they gave the FBI more access to private files and loosened restrictions on raids.</p>
+  <p>The American Civil Liberties Union insists that the act was unconstitutional because of its violation of search and seizure procedures. They point out that the bill allows the “FBI to force anyone at all - including doctors, libraries, bookstores, universities, and Internet service providers - to turn over records on their clients or customers.”
+</p>
 
     </div>
-    <a target="_blank" href="https://newnew.co/">Learn More</a>
+    <a target="_blank" href="https://www.aclu.org/other/surveillance-under-usapatriot-act">Learn More</a>
 
 
   </div>
@@ -317,8 +370,43 @@ booga
 
 </div>
 
-<div class = "cardStyle" id="StrangeDaysCard">
-ooga
+<div class = "cardStyle animate__animated animate__zoomIn" id="StrangeDaysCard">
+  <div data-selectable = true class="cardContent">
+    <h1  >VR Headsets & Social Media</h1>
+    <h2 >Emotional Immersion Is Possible in Many Ways</h2>
+
+  <div class="slideShowAndText">
+    <div class="cardSlideShow">
+
+      <div id="SocialMediaSlideshow"  class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="VRImage1.jpeg">
+            </li>
+            <li class=" splide__slide">
+              <img src="SocialMedia.png">
+            </li>
+            <li class=" splide__slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GoM4jIZbTtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div data-selectable = true class="cardText">
+
+    <p>The virtual reality aspect of Lenny’s SQUID is most apparent in today’s virtual reality headsets. Headsets like the Oculus or Vive can immerse users in new environments and experiences. </p>
+<p>However, the emotional aspect of Lenny’s SQUID is most analogous to today’s social media. When celebrities frequently post or livestream their lives, their users get to vicariously live through them. At its worst, social media encourages comparing which can severely negatively impact mental health. Desipte this, social media is just as addictive as a drug due to its ability to induce short-term happiness.
+</p>
+    </div>
+    <a target="_blank" href="https://www.pewresearch.org/internet/2018/11/28/teens-social-media-habits-and-experiences/">Learn More</a>
+
+
+  </div>
+  </div>
+
+
 </div>
 
 <div  class = "beforeClickContentDiv" id="beforeClickContentStrangeDaysCard">
@@ -329,18 +417,86 @@ ooga
 <p>Lenny's SQUID headset allows people to literally experience the feelings of others. Applications in the movie include comitting a crime or pleasure. The film uses phrases like "wired" and "jacked in," which makes the technology seem like a drug. It's a particularly addicting escape because the movie's reality is lawless and chaotic.</p>
 </div>
 
-<div class = "cardStyle"  id="TrumanShowCard">
-ooga
+<div class = "cardStyle animate__animated animate__zoomIn" id="TrumanShowCard">
+  <div data-selectable = true class="cardContent">
+    <h1  class>Twitch.tv</h1>
+    <h2 >Monetizing Around-the-Clock Streaming</h2>
+
+  <div class="slideShowAndText">
+    <div class="cardSlideShow">
+
+      <div id="TwitchSlideShow"  class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="TwitchImage1.png">
+            </li>
+            <li class=" splide__slide">
+              <img src="TwitchImage2.jpeg">
+            </li>
+            <li class=" splide__slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3rGBisAobPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div data-selectable = true class="cardText">
+<p>Today, the ideas of the Truman Show are apparent in streaming services like Twitch. Twitch allows creators to broadcast videos of themselves to their followers, which can number in the millions. Although mostly used for gaming, Twitch has also become a platform for creators to live-stream themselves going through their daily lives.
+</p>
+<p>In turn, Twitch streamers and gamers can generate ad revenue and profits from viewers.</p>
+    </div>
+    <a target="_blank" href="https://www.nytimes.com/2021/03/18/style/ludwig-ahgren-twitch-livestream.html">Learn More</a>
+
+
+  </div>
+  </div>
+
+
 </div>
 
 <div class = "beforeClickContentDiv"  id="beforeClickContentTrumanShowCard">
 <h1><i>The Truman Show</i></h1>
-<p><i>The Truman Show</i> is a TV show starring Truman Burbank, who has no idea that his life is a TV show. Executive prodcer Christof controls every aspect of Truman's life and broadcasts it to the world.</p>
+<p><i>The Truman Show</i> is a TV show starring Truman Burbank, who has no idea that his life is a TV show. Executive producer Christof controls every aspect of Truman's life and broadcasts it to the world.</p>
 
 </div>
 
-<div class = "cardStyle" id="EnemyCard">
-ooga
+<div class = "cardStyle animate__animated animate__zoomIn" id="EnemyCard">
+  <div data-selectable = true class="cardContent">
+    <h1  class>PRISM</h1>
+    <h2 >The NSA's Internet Surveillance Program</h2>
+
+  <div class="slideShowAndText">
+    <div class="cardSlideShow">
+
+      <div id="PRISMSlideshow"  class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="PRISM1.jpeg">
+            </li>
+            <li class=" splide__slide">
+              <img src="PRISM2.jpeg">
+            </li>
+            <li class=" splide__slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GoM4jIZbTtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div data-selectable = true class="cardText">
+  <p> <i>The Enemy of the State</i> film predicted government digital monitoring programs. One of these programs was called PRISM, which according to the New York Times allows the government to access “Online communications data” including “e-mail, chat services, videos, photos, stored data, file transfers, video conferencing and logins.”</p>
+  <p>Although the database is meant for international individuals, Americans who communicate abroad can be included. The tech companies involved include giants like Apple and Google, though the government insists it can only access the data through court orders. Edward Snowden leaked reports of the program in 2013. </p>
+
+    </div>
+    <a target="_blank" href="https://www.theverge.com/2013/7/17/4517480/nsa-spying-prism-surveillance-cheat-sheet">Learn More</a>
+
+
+  </div>
+  </div>
+
+
 </div>
 
 <div class = "beforeClickContentDiv"  id="beforeClickContentEnemyCard">
@@ -417,6 +573,21 @@ ooga
 
 
 </div>
+
+<div class="bottomSection" >
+  <div class="bottomArrowContainer arrowContainer animate__animated animate__pulse animate__infinite	infinite">
+
+  <img class = "coverUp bottomArrowCover" src="BackgroundColor.png">
+  <!-- arrow from https://www.w3schools.com/howto/howto_css_arrows.asp -->
+
+  <a href="#topOfPage">
+  <p><i class="arrow down border-gradient border-gradient-purple"></i></p>
+  </a>
+  </div>
+  <p>Back to Top</p>
+
+</div>
+
 
 
 <!--

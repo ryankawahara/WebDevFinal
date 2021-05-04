@@ -20,6 +20,13 @@ html body {
 
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
+
+
+
 /* adapted from https://codepen.io/designcourse/pen/GzJKOE */
 .cursor {
   z-index: 2;
@@ -138,6 +145,7 @@ flex-wrap:wrap;
 }
 
 #specificMovieSection{
+  margin-top: 65px;
   /* border:2px solid white; */
   /* height:250px; */
   /* width:100%; */
@@ -225,22 +233,37 @@ font-weight:700;
   width:100%;
 
 
-  border:2px solid pink;
+  /* border:2px solid pink; */
 }
 
 .cardSlideShow{
   /* width:75%; */
-  border:2px solid purple;
+  /* border:2px solid purple; */
   /* width:60%; */
   /* height:50px; */
   /* width:100%; */
 
 
 }
+
+
+/* arrows from https://www.w3schools.com/howto/howto_css_arrows.asp */
+.arrow {
+  border: solid white;
+  border-width: 0 20px 20px 0;
+  display: inline-block;
+  padding: 25px;
+}
+
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 .cardText{
   width:65%;
 
-  border:2px solid yellow;
+  /* border:2px solid yellow; */
     /* height:50px; */
     /* width:100%; */
 
@@ -306,12 +329,23 @@ font-weight:700;
 }
 
 #card1984{
-  background-color:teal;
+  background-color:#5F0018;
 
 
 }
 #CaptainAmericaCard{
-  background-color:blue;
+  background-color:#273c75;
+}
+
+#TrumanShowCard{
+  background-color:#667B93;
+}
+#StrangeDaysCard{
+  background-color:#B35C27;
+}
+
+#EnemyCard{
+  background-color:#34495e
 }
 
 #selectableModal{
@@ -342,28 +376,75 @@ display:none;
 
 }
 
+.indicators{
+  display:flex;
+  justify-content: space-between;
+  position:sticky;
+    top:405px;
+}
+#sticky{
+  width:300px;
+  height:auto;
+  /* border:2px solid red; */
+  /* top:405px; */
+  /* position:sticky */
+}
+#sticky2{
+  width:300px;
+  height:auto;
+  /* border:2px solid yellow; */
+/* margin-left:60vw;
+top:405px;
+  position:sticky */
+}
 #photo1 {
-  bottom:75px;
-  right:165px;
-  transform: rotate(160deg);
+  /* border:2px solid red; */
+  right:50px;
+  top:765px;
+
+
+  transform: rotate(-45deg);
+
+
+
+
 }
 #photo2 {
-  top:35px;
-  left:65px;
+    /* border:2px solid orange; */
+  top:75px;
+  left:165px;
 
-  transform: rotate(120deg);
+  transform: rotate(430deg);
 }
 #photo3 {
+  /* border:2px solid yellow; */
+
   right:165px;
 
   top:35px;
   transform: rotate(160deg);
 }
 #photo4 {
-  right:65px;
+  left:-50px;
 
-  left:35px;
-  transform: rotate(60deg);
+  /* border:2px solid green; */
+
+  top:765px;
+
+  transform: rotate(45deg);
+}
+
+#photo5{
+  right:25px;
+  transform: rotate(250deg);
+
+
+}
+
+#photo6{
+  left:25px;
+
+
 }
 
 @keyframes rotation {
@@ -403,13 +484,33 @@ color:white;
   background-color: #28a8e0;
   height:30px;
 }
+
+.slideShowAndText a{
+  font-family:'Saira Semi Condensed';
+  line-height: 15px;
+
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #28a8e0;
+  height:30px;
+  transition:0.25s;
+}
+
+.slideShowAndText a:hover{
+  text-decoration: none;
+  background-color:#1b8aba;
+}
 .sort:hover {
   text-decoration: none;
   background-color:#1b8aba;
 }
 .sort:focus {
   outline:none;
-  background-color:red;
+  background-color:#40739e;
 
 }
 
@@ -432,7 +533,7 @@ color:white;
 
 }
 .filterButton:focus{
-  background-color:yellow;
+  background-color:#192a56;
 }
 
 
@@ -490,7 +591,7 @@ margin-right:25px;
 text-align:left;
 }
 
-a{
+.linkButton {
   padding:8px 20px;
   font-size:25px;
   border-radius: 6px;
@@ -501,19 +602,31 @@ a{
   background-color: #28a8e0;
   height:50px;
   transition:0.5s;
+  line-height:50px;
 }
 
-a:hover{
+.linkButton:hover{
 
 
   background-color:#1B1464;
 
 }
 
+.listOfButtons{
+  margin-top: 15px;
+  width:101%;
+  /* border:2px solid red; */
+  display: flex;
+  /* flex-flow: wrap; */
+  justify-content: space-between;
+}
+
 #searchBar{
   font-family:'Saira Semi Condensed';
   color:white;
-  height:24px;
+  font-size:36px;
+  height:36px;
+  width:100%;
   border-radius: 6px;
 
 
@@ -521,13 +634,60 @@ a:hover{
   border:2px solid white;
 }
 
+.searchBarSection{
+  display: flex;
+  /* border:2px solid yellow; */
+}
+
+.searchBarSection img{
+  height:40px;
+  width:auto;
+  margin-right: 15px;
+}
+
 /* adapted from https://css-tricks.com/gradient-borders-in-css/ */
 .border-gradient {
+
   border: 10px solid;
   border-image-slice: 1;
   border-width: 10px;
   /* border-radius: 100px; */
 
+}
+
+.bottomSection{
+  margin-top:85px;
+  /* border:2px solid purple; */
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  font-family: 'Saira Semi Condensed';
+}
+
+.bottomSection p {
+  z-index:2;
+}
+
+.coverUp{
+  z-index: 2;
+  height:55px;
+  width:165px;
+  position:relative;
+  /* border:2px solid green; */
+  margin-bottom:-73px;
+}
+.bottomArrowContainer{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-bottom: -65px;
+}
+.bottomArrowCover{
+  top:45px;
+width:205px;
+height:75px;
+
+/* right:30px; */
 }
 .border-gradient-purple {
   border-image-source: linear-gradient(to top, #20F3D9, white);
@@ -567,18 +727,20 @@ a:hover{
 }
 
 .quoteDivSection{
-  border:3px solid yellow;
+  /* border:3px solid yellow; */
   /* width:100%; */
-  height:925px;
+  /* height:925px; */
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+
+
 .quoteDiv{
-  height:50%;
+  /* height:50%; */
   display: inline-block;
-  border:2px solid red;
+  /* border:2px solid red; */
   width:60%;
   /* height:500px; */
   font-family:'Saira Semi Condensed';
@@ -604,20 +766,35 @@ a:hover{
 }
 
 .attributionText{
+  margin-top: 25px;
   font-size:50px;
 }
 
+.arrowContainer{
+  margin-top: -65px;
+}
+
+.scrollDownSection p.frontText{
+  /* color:pink */
+}
+
 .scrollDownSection{
-  border:2px solid teal;
-  height:50px;
-  width:50px;
+
+  margin-top:55px;
+  font-family:'Saira Semi Condensed';
+  font-size:24px;
+  /* border:2px solid teal; */
+  text-align: center;
+  width:50%;
   }
 
-  #slideShowFacialRecognition img{
 
-  }
 
   .splide__slide.is-active.is-visible{
     width:300px;
     height:300px;
+  }
+
+  .beforeClickContentDiv{
+    hyphens: auto;
   }

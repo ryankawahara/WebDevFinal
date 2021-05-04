@@ -4,9 +4,13 @@ let sortPreInternet;
 let listToSort;
 let resetList;
 let searchBar;
+let sortByYear;
+let sortByName;
   let moviePosterContainer;
 
 let imageArray = ["image01.png","image02.png","image03.png"];
+let keywordArray = ["virtual reality","surveillance","GPS","social media","security"];
+
 
 const cursor = document.querySelector('.cursor');
 
@@ -43,6 +47,8 @@ console.log("loaded");
   // focusCard=document.getElementById("buttonToOpenCard");
   sortPreInternet.addEventListener("click",showPreInternet);
   resetList.addEventListener("click",resetListToNormal);
+
+
   searchBar.addEventListener("click",resetListToNormal);
 
 
@@ -52,8 +58,9 @@ console.log("loaded");
 	// } ).mount();
 
 
-
-
+let randomKeyword = keywordArray[Math.floor(Math.random()*keywordArray.length)];
+let changeSearch = document.getElementById("searchBar");
+changeSearch.setAttribute("placeholder","Ex: "+randomKeyword)
 
 
 
@@ -77,11 +84,9 @@ console.log("loaded");
 
     new Splide( "#slideShowFacialRecognition", {
       'cover'      : true,
-      'next'  : 'splide__arrow--next arrowClass',
 
-
-      "width":"20vw",
-      "heightRatio":1.5,
+      "width":"45vw",
+      "heightRatio":0.5,
 
   //   '  autoWidth': true,
   // 'focus'    : 'center',
@@ -131,6 +136,25 @@ console.log("loaded");
       "width":"45vw",
       "heightRatio":0.5,
     } ).mount();
+
+    new Splide( "#PRISMSlideshow", {
+      'cover'      : true,
+      "width":"45vw",
+      "heightRatio":0.5,
+    } ).mount();
+
+    new Splide( "#SocialMediaSlideshow", {
+      'cover'      : true,
+      "width":"45vw",
+      "heightRatio":0.5,
+    } ).mount();
+
+    new Splide( "#TwitchSlideShow", {
+      'cover'      : true,
+      "width":"45vw",
+      "heightRatio":0.5,
+    } ).mount();
+
 
   }
   // movieBox.innerText="";
@@ -196,17 +220,18 @@ console.log("loaded");
 
 
 let movieDatabase = [
-{
-  "Title" : "1984",
-  "splideName":"#splideFor1984",
-  "Synopsis":"A man loses his identity while living under a repressive regime. In a story based on George Orwell's classic novel, Winston Smith (John Hurt) is a government employee whose job involves the rewriting of history in a manner that casts his fictional country's leaders in a charitable light. His trysts with Julia (Suzanna Hamilton) provide his only measure of enjoyment, but lawmakers frown on the relationship -- and in this closely monitored society, there is no escape from Big Brother.",
-  "ReleaseYear":"1984 (Based on George Orwell's novel from 1949)",
-  "TakesPlaceIn":"1984",
-  "FocusCardName":"card1984",
-  "AppendSign":"Append1984",
-  "beforeClickName":"beforeClickContent1984",
-  "SlideShowName":"slideShow1984"
-},
+  {
+    "Title" : "Strange Days",
+    "splideName":"#splideForStrangeDays",
+    "Synopsis":"Former policeman Lenny Nero (Ralph Fiennes) has moved into a more lucrative trade: the illegal sale of virtual reality-like recordings that allow users to experience the emotions and past experiences of others. While the bootlegs typically contain tawdry incidents, Nero is shocked when he receives one showing a murder. He enlists a friend, bodyguard Mace (Angela Bassett), to help find the killer -- and the two soon stumble upon a vast conspiracy involving the police force Nero once worked for.",
+    "ReleaseYear":"1995",
+    "TakesPlaceIn":"1999",
+    "FocusCardName":"StrangeDaysCard",
+    "beforeClickName":"beforeClickContentStrangeDaysCard",
+    "AppendSign":"AppendStrangeDays",
+    "SlideShowName":"slideShowStrangeDays"
+
+  },
 
 {
   "Title" : "Captain America:\nThe Winter Soldier",
@@ -222,17 +247,17 @@ let movieDatabase = [
 
 },
 
-{
-  "Title" : "Strange Days",
-  "splideName":"#splideForStrangeDays",
-  "Synopsis":"Former policeman Lenny Nero (Ralph Fiennes) has moved into a more lucrative trade: the illegal sale of virtual reality-like recordings that allow users to experience the emotions and past experiences of others. While the bootlegs typically contain tawdry incidents, Nero is shocked when he receives one showing a murder. He enlists a friend, bodyguard Mace (Angela Bassett), to help find the killer -- and the two soon stumble upon a vast conspiracy involving the police force Nero once worked for.",
-  "ReleaseYear":"1995",
-  "TakesPlaceIn":"1999",
-  "FocusCardName":"StrangeDaysCard",
-  "beforeClickName":"beforeClickContentStrangeDaysCard",
-  "AppendSign":"AppendStrangeDays",
-  "SlideShowName":"slideShowStrangeDays"
 
+{
+  "Title" : "1984",
+  "splideName":"#splideFor1984",
+  "Synopsis":"A man loses his identity while living under a repressive regime. In a story based on George Orwell's classic novel, Winston Smith (John Hurt) is a government employee whose job involves the rewriting of history in a manner that casts his fictional country's leaders in a charitable light. His trysts with Julia (Suzanna Hamilton) provide his only measure of enjoyment, but lawmakers frown on the relationship -- and in this closely monitored society, there is no escape from Big Brother.",
+  "ReleaseYear":"1984 (Based on George Orwell's novel from 1949)",
+  "TakesPlaceIn":"1984",
+  "FocusCardName":"card1984",
+  "AppendSign":"Append1984",
+  "beforeClickName":"beforeClickContent1984",
+  "SlideShowName":"slideShow1984"
 },
 
 {
@@ -395,11 +420,12 @@ movieList.classList.add("listStyle");
     let linkText = document.createElement("p");
 
     let linkToWhere = document.createElement("a");
-    linkToWhere.classList.add("btn", "btn-primary");
+    linkToWhere.classList.add("btn", "btn-primary","linkButton");
     linkToWhere.setAttribute("data-fancybox","");
     linkToWhere.setAttribute("data-src", "#"+showThisJSON["FocusCardName"]);
     // switch this to a json thing
     linkToWhere.setAttribute("href", "javascript:;");
+
 linkToWhere.innerText= "Compare to Reality";
 
 // let displayWindowContents = document.createElement("DIV");
@@ -470,6 +496,7 @@ if (item.values().Title == "1984") {
 
 function resetListToNormal(){
 listToSort.filter();
+
 
 
 
