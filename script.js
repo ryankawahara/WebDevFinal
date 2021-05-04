@@ -471,7 +471,7 @@ animateContainer.classList.add("animatedParent");
 
 let cardName =showThisJSON["FocusCardName"];
 
-createSlideshow(cardName);
+// createSlideshow(cardName);
 
 
 let appendToThis=document.getElementById(showThisJSON["AppendSign"]);
@@ -505,52 +505,52 @@ listToSort.filter();
 
 
 
-function createSlideshow(cardName){
-
-  console.log(cardName);
-
-  // moviePosterContainer.innerText=cardName;
-
-let slideShowSection = document.createElement("DIV");
-slideShowSection.id= "image-slider";
-
-slideShowSection.classList.add("splide");
-
-let slideShowHolder = document.createElement("DIV");
-slideShowHolder.classList.add("splide__track");
-
-let listOfImages = document.createElement("UL");
-listOfImages.classList.add("splide__list");
-let newImageList;
-for (let i=0; i<imageArray.length;i++){
-
-  console.log(imageArray[i]);
-   newImageList = document.createElement("LI");
-   newImageList.classList.add("splide__slide");
-
-  // newImageList.appendChild(imageToShow);
-  // imageInList.classList.add('ryanStyle');
-
-  let imageName=imageArray[i];
-  let imageToShow = document.createElement("IMG");
-  imageToShow.src=imageName;
-  console.log("list");
-
-
-newImageList.appendChild(imageToShow);
-
-console.log(newImageList);
-listOfImages.appendChild(newImageList);
-
-}
-
-
-
-
-console.log(listOfImages);
-// slideShowHolder.appendChild(listOfImages);
-// slideShowSection.appendChild(slideShowHolder);
-// moviePosterContainer.appendChild(slideShowSection);
-// console.log(slideShowSection);
-
-}
+// function createSlideshow(cardName){
+//
+//   console.log(cardName);
+//
+//   // moviePosterContainer.innerText=cardName;
+//
+// let slideShowSection = document.createElement("DIV");
+// slideShowSection.id= "image-slider";
+//
+// slideShowSection.classList.add("splide");
+//
+// let slideShowHolder = document.createElement("DIV");
+// slideShowHolder.classList.add("splide__track");
+//
+// let listOfImages = document.createElement("UL");
+// listOfImages.classList.add("splide__list");
+// let newImageList;
+// for (let i=0; i<imageArray.length;i++){
+//
+//   console.log(imageArray[i]);
+//    newImageList = document.createElement("LI");
+//    newImageList.classList.add("splide__slide");
+//
+//   // newImageList.appendChild(imageToShow);
+//   // imageInList.classList.add('ryanStyle');
+//
+//   let imageName=imageArray[i];
+//   let imageToShow = document.createElement("IMG");
+//   imageToShow.src=imageName;
+//   console.log("list");
+//
+//
+// newImageList.appendChild(imageToShow);
+//
+// console.log(newImageList);
+// listOfImages.appendChild(newImageList);
+//
+// }
+//
+//
+//
+//
+// console.log(listOfImages);
+// // slideShowHolder.appendChild(listOfImages);
+// // slideShowSection.appendChild(slideShowHolder);
+// // moviePosterContainer.appendChild(slideShowSection);
+// // console.log(slideShowSection);
+//
+// }
