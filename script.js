@@ -160,7 +160,7 @@ changeSearch.setAttribute("placeholder","Ex: "+randomKeyword)
   // movieBox.innerText="";
 
   let options = {
-    valueNames: ['Title','Synopsis','ReleaseYear','TakesPlaceIn']
+    valueNames: ['Title','Synopsis','ReleaseYear','TakesPlaceIn','beforeClickContentDiv']
   };
 
   let values = movieDatabase;
