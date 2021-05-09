@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
+  <link rel="stylesheet" href="https://res.cloudinary.com/veseylab/raw/upload/v1613706377/magicmouse/magic-mouse-1.1.css" />
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <link
      rel="stylesheet"
@@ -89,9 +89,18 @@
     <img id="sticky2" src="Asset Flipped.png">
   </div>
 
+  <div class="topArrowContainer animate__animated animate__pulse animate__infinite	infinite">
+
+
+  <a href="#quoteDivPart">
+    <img src="downarrow.png" >
+  </a>
+  </div>
 
 
   <div data-aos="fade-up" class="quoteDivSection">
+    <a name="quoteDivPart"></a>
+
 <div class="quoteDiv">
 
   <div class="quoteText">
@@ -132,7 +141,7 @@ Chief Economist, Bank of England
       <br>
 <div class="searchBarSection">
   <img class = "icon" src="SearchIcon.png">
-  <input id = "searchBar" class="search" placeholder="Ex: Virtual Reality, Streaming" />
+  <input id = "searchBar" class="search magic-hover magic-hover__square" placeholder="Ex: Virtual Reality, Streaming" />
 
 </div>
       <!-- <input placeholder="Search" autofocus class="animated-search-filter"> -->
@@ -140,15 +149,15 @@ Chief Economist, Bank of England
 <div class="listOfButtons">
 
 
-  <button id= "sortByNameButton" class="sort" data-sort="Title">
+  <button id= "sortByNameButton" class="sort magic-hover magic-hover__square" data-sort="Title">
     Sort By Name
   </button>
 
-  <button id= "sortByYearButton" class="sort" data-sort="ReleaseYear">
+  <button id= "sortByYearButton" class="sort magic-hover magic-hover__square" data-sort="ReleaseYear">
     Sort by Year
   </button>
-  <button type="button" class ="filterButton" id = "preInternet" name="preInternet">Pre-Internet</button>
-  <button type="button" class ="filterButton"  id = "resetButton" name="resetButton">Reset</button>
+  <button type="button" class ="filterButton magic-hover magic-hover__square" id = "preInternet" name="preInternet">Pre-Internet</button>
+  <button type="button" class ="filterButton magic-hover magic-hover__square"  id = "resetButton" name="resetButton">Reset</button>
 </div>
     </div>
     <ul    class = "list " id = "movieListForSort" data-aos="fade-up">
@@ -588,7 +597,9 @@ Chief Economist, Bank of England
 
 </div>
 
-
+<p id="linkText" class= "magic-hover magic-hover__square">
+<a id="linkToWhere"></a>
+</p>
 
 <!--
 <div class="animatedParent">
@@ -601,6 +612,7 @@ Chief Economist, Bank of England
   <script src="list.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <script rel="preload" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1613706377/magicmouse/magic_mouse-1.1.js"></script>
 
     <script rel="preload" type = "module" src="script.js"></script>
     <!-- <script src="animated-search-filter.js"></script> -->

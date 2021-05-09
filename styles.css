@@ -28,7 +28,7 @@ html{
 
 
 /* adapted from https://codepen.io/designcourse/pen/GzJKOE */
-.cursor {
+/* .cursor {
   z-index: 2;
     width: 20px;
     height: 20px;
@@ -52,7 +52,7 @@ html{
     top: -8px;
     left: -8px;
     // animation: cursorAnim2 .5s infinite alternate;
-}
+} */
 
 @keyframes cursorAnim {
     from {
@@ -682,6 +682,16 @@ text-align:left;
   align-items: center;
   margin-bottom: -65px;
 }
+
+.topArrowContainer{
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  bottom:425px;
+  /* margin-bottom: 505px; */
+}
+
 .bottomArrowCover{
   top:45px;
 width:205px;
@@ -797,4 +807,9 @@ height:75px;
 
   .beforeClickContentDiv{
     hyphens: auto;
+  }
+
+
+  #linkText{
+
   }

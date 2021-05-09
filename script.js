@@ -16,21 +16,29 @@ const cursor = document.querySelector('.cursor');
 
 AOS.init();
 
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-})
+// document.addEventListener('mousemove', e => {
+//     cursor.setAttribute("style", "top: "+(e.pageY )+"px; left: "+(e.pageX )+"px;")
+// })
+//
+// document.addEventListener('click', () => {
+//     cursor.classList.add("expand");
+//
+//     setTimeout(() => {
+//         cursor.classList.remove("expand");
+//     }, 500)
+// })
+//
 
-document.addEventListener('click', () => {
-    cursor.classList.add("expand");
 
-    setTimeout(() => {
-        cursor.classList.remove("expand");
-    }, 500)
-})
-
-
-
-
+let options = {
+  "cursorOuter": "circle-basic",
+  "hoverEffect": "circle-move",
+  "hoverItemMove": false,
+  "defaultCursor": true,
+  "outerWidth": 21,
+  "outerHeight": 21
+};
+ magicMouse(options);
 
 window.addEventListener('DOMContentLoaded', function(){
 
@@ -420,7 +428,7 @@ movieList.classList.add("listStyle");
     let linkText = document.createElement("p");
 
     let linkToWhere = document.createElement("a");
-    linkToWhere.classList.add("btn", "btn-primary","linkButton");
+    linkToWhere.classList.add("btn", "btn-primary","linkButton","magic-hover","magic-hover__square");
     linkToWhere.setAttribute("data-fancybox","");
     linkToWhere.setAttribute("data-src", "#"+showThisJSON["FocusCardName"]);
     // switch this to a json thing
