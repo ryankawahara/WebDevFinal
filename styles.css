@@ -683,12 +683,20 @@ text-align:left;
   margin-bottom: -65px;
 }
 
+.topArrowSection{
+  position:relative;
+  display: flex;
+  justify-content: center;
+}
+
 .topArrowContainer{
   position: relative;
   display: flex;
   flex-direction:column;
   align-items: center;
   bottom:425px;
+  /* border:2px solid yellow; */
+  width:120px;
   /* margin-bottom: 505px; */
 }
 
