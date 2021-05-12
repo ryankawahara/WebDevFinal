@@ -29,7 +29,7 @@ AOS.init();
 // })
 //
 
-
+// from https://magicmousejs.web.app/#
 let options = {
   "cursorOuter": "circle-basic",
   "hoverEffect": "circle-move",
